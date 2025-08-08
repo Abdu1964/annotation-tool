@@ -1,17 +1,13 @@
 import axios from "axios";
 
 export const annotationAPI = axios.create({
-  baseURL:
-    typeof window === "undefined"
-      ? process.env?.ANNOTATION_URL
-      : window.ENV?.ANNOTATION_URL,
+  baseURL: "http://100.67.47.42:5800",
   timeout: 0,
 });
 
 export const loaderAPI = axios.create({
-  baseURL:
-    typeof window === "undefined"
-      ? process.env?.LOADER_URL
-      : window.ENV?.LOADER_URL,
+  baseURL: "http://100.67.47.42:8000",
   timeout: 0,
 });
+
+console.log(process.env)
