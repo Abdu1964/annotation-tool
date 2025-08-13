@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const annotationAPI = axios.create({
-  baseURL: "http://http://172.30.195.249:5800",
+  baseURL: "http://172.30.195.249:5800",
   timeout: 0,
 
 });
